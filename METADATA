@@ -1,7 +1,4 @@
 name: "golang-protobuf"
-description:
-    ""
-
 third_party {
   url {
     type: HOMEPAGE
@@ -11,6 +8,10 @@ third_party {
     type: GIT
     value: "https://github.com/golang/protobuf"
   }
-  version: "1909bc2f63dc92bb931deace8b8312c4db72d12f"
-  last_upgrade_date { year: 2017 month: 8 day: 8 }
+  version: "9eb2c01ac278a5d89ce4b2be68fe4500955d8179"
+  last_upgrade_date {
+    year: 2018
+    month: 7
+    day: 6
+  }
 }
