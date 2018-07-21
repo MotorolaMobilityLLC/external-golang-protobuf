@@ -29,6 +29,10 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+// AOSP change: ignore this file since it imports conformance_proto,
+// which depends on go packages not present in the android tree
+// +build ignore
+
 // conformance implements the conformance test subprocess protocol as
 // documented in conformance.proto.
 package main
