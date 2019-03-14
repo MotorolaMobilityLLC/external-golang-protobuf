@@ -8,10 +8,10 @@ third_party {
     type: GIT
     value: "https://github.com/golang/protobuf"
   }
-  version: "9eb2c01ac278a5d89ce4b2be68fe4500955d8179"
+  version: "v1.3.0"
   last_upgrade_date {
-    year: 2018
-    month: 7
-    day: 6
+    year: 2019
+    month: 3
+    day: 13
   }
 }
