@@ -92,10 +92,6 @@ bootstrap_go_package {
         "proto/text.go",
         "proto/text_parser.go",
     ],
-    testSrcs: [
-        "proto/message_set_test.go",
-        "proto/size2_test.go",
-    ],
 }
 
 bootstrap_go_package {
@@ -131,8 +127,10 @@ bootstrap_go_package {
         // Requires golang.org/x/sync/errgroup
         //"proto/extensions_test.go",
         "proto/map_test.go",
+        "proto/message_set_test.go",
         "proto/proto3_test.go",
         "proto/size_test.go",
+        "proto/size2_test.go",
         "proto/text_parser_test.go",
         "proto/text_test.go",
     ],
