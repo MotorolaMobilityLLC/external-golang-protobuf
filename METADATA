@@ -8,6 +8,7 @@ third_party {
     type: GIT
     value: "https://github.com/golang/protobuf"
   }
+  license_type: NOTICE
   version: "v1.3.5"
   last_upgrade_date {
     year: 2020
