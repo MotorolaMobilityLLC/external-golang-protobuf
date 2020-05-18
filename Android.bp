@@ -70,6 +70,10 @@ blueprint_go_binary {
         "protoc-gen-go/main.go",
         "protoc-gen-go/link_grpc.go",
     ],
+    testSrcs: [
+        // execs protoc from the PATH
+        //"protoc-gen-go/golden_test.go",
+    ],
 }
 
 bootstrap_go_package {
@@ -92,6 +96,9 @@ bootstrap_go_package {
         "proto/text.go",
         "proto/text_parser.go",
     ],
+    testSrcs: [
+        "proto/size2_test.go",
+    ],
 }
 
 bootstrap_go_package {
@@ -112,6 +119,7 @@ bootstrap_go_package {
     name: "golang-protobuf-proto_test",
     pkgPath: "github.com/golang/protobuf/proto_test",
     deps: [
+        "golang-protobuf-jsonpb",
         "golang-protobuf-proto",
         "golang-protobuf-proto-proto3_proto",
         "golang-protobuf-proto-test-proto",
@@ -122,6 +130,7 @@ bootstrap_go_package {
         "proto/any_test.go",
         "proto/clone_test.go",
         "proto/decode_test.go",
+        "proto/discard_test.go",
         "proto/encode_test.go",
         "proto/equal_test.go",
         // Requires golang.org/x/sync/errgroup
@@ -130,7 +139,6 @@ bootstrap_go_package {
         "proto/message_set_test.go",
         "proto/proto3_test.go",
         "proto/size_test.go",
-        "proto/size2_test.go",
         "proto/text_parser_test.go",
         "proto/text_test.go",
     ],
